@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="panel panel-default" style="height: 360px;overflow-y: auto;">
+    <div class="panel-heading">Involved Team:</div>
+    <div class="panel-body">
+      <div class="row" *ngFor="let members of teamMembers" style="padding:9px;">
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <img src="{{members.img}}" alt="{{members.name}}" class="img-circle" style="width:90%">
+        </div>
+        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+          <b>{{members.name}}</b> <br>
+          <span>{{members.role}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

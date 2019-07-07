@@ -1,0 +1,24 @@
+[
+    
+        {
+            "name":"Jack Wiiliams",
+            "role":"UI/UX Designer",
+            "img":"assets/images/jack.jfif"
+        },
+        {
+            "name":"Kate Beckinsale",
+            "role":"Project Manager",
+            "img":"assets/images/kate.jfif"
+        },
+        {
+            "name":"Mikay Thompson",
+            "role":"Developer",
+            "img":"assets/images/mike.png"
+        },
+        {
+            "name":"Ryan Deegan",
+            "role":"Web Designer",
+            "img":"assets/images/ryan.webp"
+        }
+    
+]

@@ -1,0 +1,31 @@
+
+<i class="hidden-sm hidden-md hidden-lg fa fa-bars toggle-ham" (click)="toggleSidebar()"></i>
+<div class="sidebar" [ngClass]="{ 'collapsed': !isSidebarExpanded }">
+    <div class="row">
+        <div class="col-sm-5 col-md-5 col-lg-5 col-xs-5">
+            <img src="{{imgPath}}" alt="Jack" class="img-circle" style="width:100%">
+        </div>
+        <div class="col-sm-7 col-md-7 col-lg-7 col-xs-7">
+            <p style="color:white;float:left;font-size:16px;">{{name}}</p>
+        </div>
+    </div>
+    <div class="row">
+        <hr style="color:grey">
+    </div>
+    <div class="row">
+        <a href="#{{sidebarData.name}}" *ngFor="let sidebarData of sidebarData"><i
+                class="fa fa-fw fa-{{sidebarData.icon}}"></i> {{sidebarData.name | titlecase}}</a>
+        <div class="row">
+            <hr style="color:grey">
+        </div>
+        <div class="dropdown">
+            <a href="#more" (click)="myFunction()">More <span class="caret"></span></a>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#payment"><i class="fa fa-fw fa-credit-card"></i> Payments</a>
+                <a href="#directory"><i class="fa fa-fw fa-folder-o"></i> Directory</a>
+                <a href="#library"><i class="fa fa-fw fa-book"></i> Library</a>
+                <a href="#help"><i class="fa fa-fw fa-question-circle-o"></i> Help</a>
+            </div>
+        </div>
+    </div>
+</div>
